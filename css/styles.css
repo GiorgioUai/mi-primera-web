@@ -285,6 +285,7 @@ nav a:hover
     gap: 6px;
     text-align: left;
     flex: 1;
+    padding-right: 110px;
 }
 
 .logo-marca
@@ -319,6 +320,60 @@ nav a:hover
     color: #8b949e;
     font-size: 16px;
     margin: 4px 0 0;
+}
+
+.selector-idioma
+{
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    width: fit-content;
+    border: 1px solid rgba(88, 166, 255, 0.24);
+    border-radius: 999px;
+    background: linear-gradient(
+        135deg,
+        rgba(2, 10, 24, 0.22),
+        rgba(6, 18, 38, 0.16)
+    );
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.02),
+        0 0 10px rgba(88, 166, 255, 0.05);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    z-index: 2;
+}
+
+.selector-idioma span
+{
+    color: #58a6ff;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+.selector-idioma a
+{
+    color: #8b949e;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.selector-idioma a:hover
+{
+    color: #f0f6fc;
+    text-shadow: 0 0 8px rgba(88, 166, 255, 0.35);
+}
+
+.selector-idioma a.idioma-activo
+{
+    color: #58a6ff;
+    text-shadow: 0 0 10px rgba(88, 166, 255, 0.30);
 }
 
 /* ---------- Badges / iconos de tecnologías ---------- */
@@ -721,6 +776,28 @@ nav a:hover
     header
     {
         padding: 20px 16px;
+    }
+
+    .info-header
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        text-align: left;
+        flex: 1;
+        padding-right: 0;
+    }
+
+    .selector-idioma
+    {
+        position: static;
+        margin-top: 10px;
+        padding: 7px 11px;
+    }
+
+    .selector-idioma a
+    {
+        font-size: 12px;
     }
 
     .identidad
