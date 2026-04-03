@@ -48,8 +48,8 @@ p
 h1
 {
     color: #f0f6fc;
-    font-size: 42px;
-    line-height: 1.1;
+    font-size: 49px;
+    line-height: 1.05;
     margin: 0;
     text-shadow: 0 0 12px rgba(255, 255, 255, 0.08);
 }
@@ -273,22 +273,23 @@ nav a:hover
 {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 26px;
-    margin-bottom: 22px;
+    justify-content: flex-start;
+    gap: 34px;
+    margin-bottom: 26px;
 }
 
 .info-header
 {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 6px;
     text-align: left;
+    flex: 1;
 }
 
 .logo-marca
 {
-    width: 185px;
+    width: 250px;
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -301,14 +302,14 @@ nav a:hover
     width: 100%;
     height: auto;
     filter:
-        drop-shadow(0 0 12px rgba(88, 166, 255, 0.30))
-        drop-shadow(0 0 24px rgba(88, 166, 255, 0.14));
+        drop-shadow(0 0 14px rgba(88, 166, 255, 0.38))
+        drop-shadow(0 0 30px rgba(88, 166, 255, 0.20));
 }
 
 .subtitulo
 {
     color: #58a6ff;
-    font-size: 19px;
+    font-size: 22px;
     font-weight: bold;
     margin: 0;
 }
@@ -316,8 +317,8 @@ nav a:hover
 .frase-header
 {
     color: #8b949e;
-    font-size: 15px;
-    margin: 2px 0 0;
+    font-size: 16px;
+    margin: 4px 0 0;
 }
 
 /* ---------- Badges / iconos de tecnologías ---------- */
@@ -731,12 +732,12 @@ nav a:hover
 
     .logo-marca
     {
-        width: 130px;
+        width: 150px;
     }
 
     h1
     {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .subtitulo
