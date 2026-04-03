@@ -2,7 +2,12 @@
    BASE
    Estilos globales de texto, fondo y elementos generales
    ========================================================= */
-body
+html
+{
+    scroll-behavior: smooth;
+}
+
+   body
 {
     font-family: Arial, sans-serif;
     margin: 40px;
@@ -127,21 +132,14 @@ footer
 section
 {
     margin-bottom: 30px;
-    background: linear-gradient(
-        135deg,
-        rgba(4, 14, 30, 0.22),
-        rgba(6, 18, 38, 0.16)
-    );
+    background: linear-gradient(135deg,rgba(4, 14, 30, 0.22),rgba(6, 18, 38, 0.16));
     padding: 20px;
     border-radius: 12px;
     border: 1px solid rgba(88, 166, 255, 0.22);
-    box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.02),
-        0 0 0 1px rgba(88, 166, 255, 0.025),
-        0 0 12px rgba(88, 166, 255, 0.05),
-        0 6px 18px rgba(0, 0, 0, 0.14);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.02), 0 0 0 1px rgba(88, 166, 255, 0.025), 0 0 12px rgba(88, 166, 255, 0.05), 0 6px 18px rgba(0, 0, 0, 0.14);
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
+    scroll-margin-top: 24px;
 }
 
 section h2
@@ -374,6 +372,56 @@ nav a:hover
 {
     color: #58a6ff;
     text-shadow: 0 0 10px rgba(88, 166, 255, 0.30);
+}
+
+/* ---------- Perfiles en Sobre mí ---------- */
+.perfiles-sobre-mi
+{
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(88, 166, 255, 0.16);
+}
+
+.texto-perfiles
+{
+    margin: 0 0 12px;
+    color: #8b949e;
+    font-size: 15px;
+}
+
+.enlaces-perfiles
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.enlaces-perfiles a
+{
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(88, 166, 255, 0.22);
+    background: linear-gradient(
+        135deg,
+        rgba(2, 10, 24, 0.24),
+        rgba(6, 18, 38, 0.18)
+    );
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.02),
+        0 0 10px rgba(88, 166, 255, 0.05);
+    text-decoration: none;
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s, color 0.3s;
+}
+
+.enlaces-perfiles a:hover
+{
+    color: #f0f6fc;
+    border-color: rgba(88, 166, 255, 0.45);
+    box-shadow:
+        0 0 14px rgba(88, 166, 255, 0.10),
+        0 8px 18px rgba(0, 0, 0, 0.16);
+    transform: translateY(-2px);
 }
 
 /* ---------- Badges / iconos de tecnologías ---------- */
@@ -825,6 +873,19 @@ nav a:hover
     .frase-header
     {
         font-size: 14px;
+    }
+
+    .enlaces-perfiles
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .enlaces-perfiles a
+    {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
     }
 
     .menu-toggle
