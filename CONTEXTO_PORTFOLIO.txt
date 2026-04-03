@@ -1,61 +1,91 @@
-Proyecto: Portfolio web personal de Alejandro Ariel Giorgio
+PORTFOLIO WEB - CONTEXTO ACTUAL DEL PROYECTO
 
-Nombre de la carpeta del proyecto:
-- mi-primera-web
+Proyecto:
+Portfolio personal de Alejandro Ariel Giorgio.
 
-Tecnologías usadas:
+Objetivo:
+Construir un portfolio web profesional, visualmente atractivo y bien organizado, que muestre mi perfil, mis tecnologías y mis proyectos reales mientras sigo aprendiendo desarrollo.
+
+Stack actual:
 - HTML
 - CSS
 - JavaScript
 
-Estructura actual del proyecto:
-- index.html
-- css/styles.css
-- js/script.js
-- CONTEXTO_PORTFOLIO.txt
+Identidad y presentación:
+- Nombre visible: Alejandro Ariel Giorgio
+- Subtítulo actual: Estudiante de Ingeniería en Sistemas Informáticos
+- Frase actual: Desarrollando proyectos reales y construyendo mi camino como developer
 
-Estructura visual actual:
-- header con identidad personal y menú de navegación
-- secciones: Sobre mí, Tecnologías, Proyectos y Contacto
-- footer
-- menú hamburguesa funcional para mobile
+Información personal/profesional mostrada:
+- Estudiante de Ingeniería en Sistemas Informáticos
+- Universidad: UAI
+- Enfoque actual: desarrollo web, aplicaciones, bases de datos y arquitectura de software
+- El portfolio muestra proyectos reales y evolución técnica paso a paso
 
-Estilo visual:
-- diseño dark inspirado en GitHub
-- estética limpia, simple y profesional
-- responsive para pantallas pequeñas
+Diseño actual:
+- Estilo dark inspirado en GitHub, evolucionando hacia una estética más futurista/tecnológica
+- Fondo con imagen tipo circuito/placa tecnológica
+- Header con branding visual personalizado
+- Navegación centrada
+- Cards con glow azul y estética más premium
+- Responsive funcionando en mobile
 
-Organización actual del CSS:
-- BASE
-- LAYOUT
-- NAVEGACIÓN
-- COMPONENTES
-- SECCIONES
-- RESPONSIVE
+Branding:
+- Se agregó un logo propio "AAG" como imagen
+- Archivo del logo: assets/logo-aag.png
+- Fondo visual tecnológico agregado: assets/fondo-circuito.png
 
-JavaScript actual:
-- apertura y cierre del menú hamburguesa en mobile
-- cambio de icono del botón entre abrir y cerrar
-- cambio de aria-label para accesibilidad básica
+Secciones actuales:
+1. Sobre mí
+2. Tecnologías
+3. Proyectos
+4. Contacto
 
-Forma de trabajo:
-- avanzar paso a paso
-- no adelantarse
-- explicar cada cambio de forma clara y simple
-- indicar exactamente dónde va cada cambio: HTML, CSS o JS
-- no modificar cosas que no se pidieron
-- no entregar bloques vacíos
-- priorizar orden, comprensión y aprendizaje
+Tecnologías mostradas actualmente:
+- HTML
+- CSS
+- JavaScript
+- C#
+- SQL
+- .NET MAUI
+- ASP.NET Core
+- PostgreSQL
 
-Estado actual:
-- HTML completo
-- CSS completo y responsive
-- JS del menú hamburguesa funcionando
+Proyectos actuales en la web:
+1. Portfolio web personal
+   - Estado: En desarrollo
+   - Tecnologías: HTML, CSS, JavaScript
+   - Tiene botón "Ver sitio"
+   - URL publicada: https://giorgiouai.github.io/mi-primera-web/
 
-Objetivo general:
-- construir un portfolio web sólido para practicar desarrollo frontend
-- seguir aprendiendo estructura, estilos, responsive y lógica básica con JavaScript
-- mejorar el proyecto de manera progresiva, entendiendo cada parte
+2. ControlFichadas
+   - Estado: En desarrollo
+   - Tecnologías: .NET MAUI, ASP.NET Core API, PostgreSQL, SOLID, POO
+   - Tiene video demo embebido
+   - Archivo del video: assets/videos/controlfichadas-demo.mp4
+   - Tiene etiqueta visual: "Proyecto en desarrollo"
 
-Próximo objetivo:
-- [escribir aquí el siguiente paso a desarrollar]
+Contacto actual:
+- GitHub: https://github.com/GiorgioUai
+- LinkedIn: https://www.linkedin.com/in/alejandro-ariel-giorgio/
+- Email: alfiariel@gmail.com
+- Enlace de email configurado para abrir Gmail web
+
+Decisiones tomadas:
+- No mostrar código fuente dentro del portfolio
+- No mencionar uso de IA en la presentación principal
+- Mostrar la parte técnica de los proyectos de forma breve y profesional
+- Priorizar una estética moderna, clara y sólida antes que llenar la página con demasiados elementos
+
+Pendientes o próximos pasos:
+- Seguir acercando el diseño general al mock visual de referencia
+- Mejorar aún más el fondo y la atmósfera tecnológica
+- Refinar la experiencia mobile
+- Seguir puliendo el header y la navegación
+- Seguir mejorando la presentación visual de los proyectos
+
+Importante para futuras modificaciones:
+- Trabajar paso a paso
+- No hacer cambios innecesarios
+- Indicar siempre exactamente si un cambio va en HTML, CSS o JS
+- Mantener consistencia visual y estructura clara
