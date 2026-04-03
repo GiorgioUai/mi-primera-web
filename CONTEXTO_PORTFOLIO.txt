@@ -1,0 +1,61 @@
+Proyecto: Portfolio web personal de Alejandro Ariel Giorgio
+
+Nombre de la carpeta del proyecto:
+- mi-primera-web
+
+Tecnologías usadas:
+- HTML
+- CSS
+- JavaScript
+
+Estructura actual del proyecto:
+- index.html
+- css/styles.css
+- js/script.js
+- CONTEXTO_PORTFOLIO.txt
+
+Estructura visual actual:
+- header con identidad personal y menú de navegación
+- secciones: Sobre mí, Tecnologías, Proyectos y Contacto
+- footer
+- menú hamburguesa funcional para mobile
+
+Estilo visual:
+- diseño dark inspirado en GitHub
+- estética limpia, simple y profesional
+- responsive para pantallas pequeñas
+
+Organización actual del CSS:
+- BASE
+- LAYOUT
+- NAVEGACIÓN
+- COMPONENTES
+- SECCIONES
+- RESPONSIVE
+
+JavaScript actual:
+- apertura y cierre del menú hamburguesa en mobile
+- cambio de icono del botón entre abrir y cerrar
+- cambio de aria-label para accesibilidad básica
+
+Forma de trabajo:
+- avanzar paso a paso
+- no adelantarse
+- explicar cada cambio de forma clara y simple
+- indicar exactamente dónde va cada cambio: HTML, CSS o JS
+- no modificar cosas que no se pidieron
+- no entregar bloques vacíos
+- priorizar orden, comprensión y aprendizaje
+
+Estado actual:
+- HTML completo
+- CSS completo y responsive
+- JS del menú hamburguesa funcionando
+
+Objetivo general:
+- construir un portfolio web sólido para practicar desarrollo frontend
+- seguir aprendiendo estructura, estilos, responsive y lógica básica con JavaScript
+- mejorar el proyecto de manera progresiva, entendiendo cada parte
+
+Próximo objetivo:
+- [escribir aquí el siguiente paso a desarrollar]

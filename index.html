@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Alejandro Ariel Giorgio</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="identidad">
+        <div class="logo-texto">AAG</div>
+
+        <div class="info-header">
+          <h1>Alejandro Ariel Giorgio</h1>
+          <p class="subtitulo">Developer en formacion.</p>
+          <p class="frase-header">Construyendo mis cimientos paso a paso</p>
+        </div>
+      </div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        ☰
+      </button>
+
+      <nav id="menu-principal">
+        <ul>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#tecnologias">Tecnologías</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>      
+      <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Me llamo Alejandro y estoy construyendo mi <span>primer portfolio web</span> mientras aprendo HTML paso a paso.</p>
+        <p>Mi objetivo es seguir aprendiendo <strong>desarrollo web</strong> y construir proyectos cada vez más completos y mejor organizados.</p>
+        <p>Actualmente estoy enfocándome en aprender <em>HTML</em> antes de pasar a CSS y JavaScript.</p>
+        <a href="#">Leer más</a>
+      </section>
+
+      <section id="tecnologias">
+        <h2>Tecnologías</h2>
+        <p>Tecnologías que estoy aprendiendo</p>
+        <ul>
+          <li class="tech html">
+            <span class="tech-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M3 2l1.8 20L12 24l7.2-2L21 2H3zm14.3 4l-.2 2.3H9.2l.2 2.2h7.5l-.6 6.5L12 18.2l-4.3-1.2-.3-3.2h2.1l.2 1.5 2.3.6 2.3-.6.2-2.5H7.2L6.6 6h10.7z"/>
+              </svg>
+            </span>
+            <span>HTML</span>
+          </li>
+
+          <li class="tech css">
+            <span class="tech-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M3 2l1.8 20L12 24l7.2-2L21 2H3zm14 4l-.2 2.3H9l.2 2.2h7.3l-.6 6.5L12 18.2l-3.9-1.1-.3-3h2.1l.2 1.4 1.9.5 2-.5.2-2.4H7L6.4 6H17z"/>
+              </svg>
+            </span>
+            <span>CSS</span>
+          </li>
+
+          <li class="tech js">
+            <span class="tech-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20">
+                <rect width="24" height="24" rx="3" fill="#f7df1e"></rect>
+                <text x="12" y="16" text-anchor="middle" font-size="10" font-family="Arial" fill="#0d1117" font-weight="bold">
+                  JS
+                </text>
+              </svg>
+            </span>
+            <span>JavaScript</span>
+          </li>
+
+          <li class="tech csharp">
+            <span class="tech-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <polygon points="12,2 19,6 19,18 12,22 5,18 5,6"></polygon>
+                <text x="12" y="16" text-anchor="middle" font-size="9" font-family="Arial" fill="white">C#</text>
+              </svg>
+            </span>
+            <span>C#</span>
+          </li>
+
+          <li class="tech sql">
+            <span class="tech-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <ellipse cx="12" cy="5" rx="7" ry="3"></ellipse>
+                <path d="M5 5v10c0 1.7 3.1 3 7 3s7-1.3 7-3V5"></path>
+                <path d="M5 10c0 1.7 3.1 3 7 3s7-1.3 7-3"></path>
+              </svg>
+            </span>
+            <span>SQL</span>
+          </li>
+        </ul>
+        <a href="#">Ver tecnologías</a>        
+      </section>
+
+      <section id="proyectos">
+        <h2>Proyectos</h2>
+
+        <p class="intro-proyectos">
+          Estos son algunos de los proyectos con los que estoy practicando y construyendo experiencia mientras avanzo en mi formación como developer.
+        </p>
+
+        <div class="contenedor-proyectos">
+          <article class="card-proyecto">
+            <div class="proyecto-header">
+              <h3>Mi primer proyecto</h3>
+              <span class="estado-proyecto en-desarrollo">En desarrollo</span>
+            </div>
+
+            <p>
+              Actualmente estoy construyendo mi primer portfolio web y más adelante voy a agregar aquí mis proyectos.
+            </p>
+
+            <p>
+              Este espacio me va a servir para mostrar los proyectos que vaya desarrollando y practicando.
+            </p>
+
+            <div class="tecnologias-proyecto">
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+
+            <a href="#">Ver más</a>
+          </article>
+
+          <article class="card-proyecto">
+            <div class="proyecto-header">
+              <h3>Sistema de gestión en C#</h3>
+              <span class="estado-proyecto proximamente">Próximamente</span>
+            </div>
+
+            <p>
+              Proyecto orientado a practicar lógica de negocio, conexión con base de datos y organización en capas.
+            </p>
+
+            <p>
+              La idea es aplicar buenas prácticas en C#, SQL y estructura profesional de una aplicación.
+            </p>
+
+            <div class="tecnologias-proyecto">
+              <span>C#</span>
+              <span>SQL</span>
+            </div>
+
+            <a href="#">Ver más</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes encontrarme en los siguientes medios.</p>        
+        <div id="div-contacto">
+          <article>
+            <div class="contacto-header">
+              <span class="icono">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12a12 12 0 008.2 11.4c.6.1.8-.2.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.2-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1 .1 1.6 1 1.6 1 .9 1.6 2.4 1.1 3 .8.1-.6.3-1.1.6-1.4-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 016 0C17 3.9 18 4.2 18 4.2c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.3.7 1 .7 2v3c0 .4.2.7.8.6A12 12 0 0024 12c0-6.6-5.4-12-12-12z"/>
+                </svg>
+              </span>
+              <h3>GitHub</h3>
+            </div>
+            <a href="#">Ver perfil</a>
+          </article>
+
+          <article>
+            <div class="contacto-header">
+              <span class="icono">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path d="M4.98 3.5C4.98 5 3.86 6 2.5 6S0 5 0 3.5 1.12 1 2.5 1 4.98 2 4.98 3.5zM.5 8h4v12h-4V8zm7 0h3.6v1.6h.1c.5-.9 1.7-1.8 3.5-1.8 3.7 0 4.4 2.4 4.4 5.5V20h-4v-5.3c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V20h-4V8z"/>
+                </svg>
+              </span>
+              <h3>LinkedIn</h3>
+            </div>
+            <a href="#">Ver perfil</a>
+          </article>
+
+          <article>
+            <div class="contacto-header">
+              <span class="icono">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="5" width="18" height="14" rx="2" ry="2"></rect>
+                  <path d="M3 7l9 6 9-6"></path>
+                </svg>
+              </span>
+              <h3>Email</h3>
+            </div>
+            <a href="#">Enviar correo</a>
+          </article>      
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Alejandro Ariel Giorgio<br>Mi portfolio de developer</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

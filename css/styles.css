@@ -1,0 +1,576 @@
+/* =========================================================
+   BASE
+   Estilos globales de texto, fondo y elementos generales
+   ========================================================= */
+body
+{
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #0d1117;
+}
+
+p
+{
+    color: #c9d1d9;
+}
+
+h1
+{
+    color: #f0f6fc;
+    font-size: 40px;
+    margin: 0;
+}
+
+h3
+{
+    color: #f0f6fc;
+}
+
+button
+{
+    padding: 10px 16px;
+    background-color: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* =========================================================
+   LAYOUT
+   Estructura general de la página
+   ========================================================= */
+header
+{
+    max-width: 900px;
+    margin: 0 auto 20px;
+    padding: 24px 20px 20px;
+    background: linear-gradient(
+        135deg,
+        rgba(13, 17, 23, 0.95),
+        rgba(22, 27, 34, 0.9),
+        rgba(13, 17, 23, 0.95)
+    );
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+header::after
+{
+    content: "";
+    display: block;
+    margin-top: 20px;
+    height: 1px;
+    background: linear-gradient(to right, #58a6ff, #30363d, transparent);
+}
+
+main
+{
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+section
+{
+    margin-bottom: 30px;
+    background-color: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+
+section h2
+{
+    margin-bottom: 15px;
+    color: #58a6ff;
+}
+
+section p
+{
+    line-height: 1.6;
+}
+
+section ul
+{
+    color: #c9d1d9;
+}
+
+section a
+{
+    color: #58a6ff;
+    font-weight: bold;
+}
+
+section a:hover
+{
+    color: #79c0ff;
+}
+
+footer
+{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #8b949e;
+}
+
+footer p
+{
+    color: #8b949e;
+    margin: 0;
+}
+
+/* =========================================================
+   NAVEGACIÓN
+   Menú principal del header
+   ========================================================= */
+header nav
+{
+    margin-top: 20px;
+}
+
+nav ul
+{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a
+{
+    display: inline-block;
+    color: #c9d1d9;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 1px solid #30363d;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+nav a:hover
+{
+    color: #0d1117;
+    background-color: #58a6ff;
+    border-color: #58a6ff;
+}
+
+/* Botón hamburguesa */
+.menu-toggle
+{
+    display: none;
+    background-color: transparent;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.menu-toggle:hover
+{
+    background-color: #58a6ff;
+    color: #0d1117;
+    border-color: #58a6ff;
+}
+
+/* =========================================================
+   COMPONENTES
+   Piezas reutilizables de la interfaz
+   ========================================================= */
+
+/* ---------- Identidad del header ---------- */
+.identidad
+{
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+.logo-texto
+{
+    font-size: 56px;
+    font-weight: 900;
+    color: #58a6ff;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.info-header
+{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.subtitulo
+{
+    color: #58a6ff;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.frase-header
+{
+    color: #8b949e;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* ---------- Badges / iconos de tecnologías ---------- */
+.tech
+{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tech-icon
+{
+    display: flex;
+    align-items: center;
+}
+
+.tech.html .tech-icon
+{
+    color: #e34f26;
+}
+
+.tech.css .tech-icon
+{
+    color: #1572b6;
+}
+
+.tech.js .tech-icon
+{
+    color: #f7df1e;
+}
+
+.tech.csharp .tech-icon
+{
+    color: #68217a;
+}
+
+.tech.csharp .tech-icon svg
+{
+    width: 25px;
+    height: 25px;
+}
+
+.tech.sql .tech-icon
+{
+    color: #38bdf8;
+}
+
+.tech.sql .tech-icon svg
+{
+    width: 22px;
+    height: 22px;
+}
+
+/* ---------- Card de proyecto ---------- */
+.card-proyecto
+{
+    flex: 1;
+    min-width: 280px;
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    padding: 20px;
+    transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.card-proyecto:hover
+{
+    border-color: #58a6ff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.proyecto-header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.proyecto-header h3
+{
+    margin: 0;
+}
+
+.intro-proyectos
+{
+    margin-bottom: 20px;
+}
+
+.estado-proyecto
+{
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background-color: rgba(88, 166, 255, 0.12);
+    border: 1px solid rgba(88, 166, 255, 0.35);
+    color: #79c0ff;
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.estado-proyecto.en-desarrollo
+{
+    background-color: rgba(46, 160, 67, 0.12);
+    border: 1px solid rgba(46, 160, 67, 0.35);
+    color: #3fb950;
+}
+
+.estado-proyecto.proximamente
+{
+    background-color: rgba(210, 153, 34, 0.12);
+    border: 1px solid rgba(210, 153, 34, 0.35);
+    color: #d29922;
+}
+
+.tecnologias-proyecto
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 16px 0;
+}
+
+.tecnologias-proyecto span
+{
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: #c9d1d9;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-proyecto a
+{
+    display: inline-block;
+    margin-top: 8px;
+    padding: 10px 14px;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.card-proyecto a:hover
+{
+    background-color: #58a6ff;
+    color: #0d1117;
+    border-color: #58a6ff;
+}
+
+/* ---------- Cards de contacto ---------- */
+.contacto-header
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.icono
+{
+    color: #58a6ff;
+    display: flex;
+    align-items: center;
+}
+
+.icono svg
+{
+    width: 22px;
+    height: 22px;
+}
+
+/* =========================================================
+   SECCIONES
+   Reglas específicas de cada sección
+   ========================================================= */
+
+/* ---------- Tecnologías ---------- */
+#tecnologias ul
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+    margin: 0 0 16px 0;
+}
+
+#tecnologias li
+{
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 10px 16px;
+    color: #c9d1d9;
+    font-weight: bold;
+}
+
+/* ---------- Proyectos ---------- */
+.contenedor-proyectos
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/* ---------- Contacto ---------- */
+#div-contacto
+{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+#div-contacto article
+{
+    flex: 1;
+    min-width: 200px;
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    padding: 20px;
+    transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+#div-contacto article:hover
+{
+    border-color: #79c0ff;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+#div-contacto h3
+{
+    margin: 0;
+}
+
+#div-contacto a
+{
+    display: inline-block;
+    margin-top: 6px;
+}
+
+/* =========================================================
+   RESPONSIVE
+   Ajustes para pantallas pequeñas
+   ========================================================= */
+@media (max-width: 768px)
+{
+    body
+    {
+        margin: 20px;
+    }
+
+    header
+    {
+        padding: 20px 16px;
+    }
+
+    .identidad
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .logo-texto
+    {
+        font-size: 32px;
+    }
+
+    h1
+    {
+        font-size: 28px;
+    }
+
+    .subtitulo
+    {
+        font-size: 16px;
+    }
+
+    .frase-header
+    {
+        font-size: 14px;
+    }
+
+    .menu-toggle
+    {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 8px 12px;
+        line-height: 1;
+        font-size: 20px;
+        box-sizing: border-box;
+    }
+
+    #menu-principal
+    {
+        display: none;
+        width: 100%;
+    }
+
+    #menu-principal.activo
+    {
+        display: block;
+    }
+
+    nav ul
+    {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav li
+    {
+        width: 100%;
+    }
+
+    nav a
+    {
+        display: block;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .contenedor-proyectos
+    {
+        flex-direction: column;
+    }
+
+    .card-proyecto
+    {
+        min-width: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #div-contacto
+    {
+        flex-direction: column;
+    }
+}
